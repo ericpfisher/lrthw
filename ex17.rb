@@ -1,0 +1,1 @@
+File.open(ARGV[1], 'w').write(File.read(ARGV[0])).close()
