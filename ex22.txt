@@ -1,0 +1,123 @@
+#This is a list of terms from Learn Ruby the Hard Way.  This will not run.
+
+Exercise 0
+ruby -v -- run at command prompt, shows version of installed ruby
+irb -- Interactive Ruby, command to start irb 
+
+
+Exercise 1
+puts -- prints a string to stdout and appends newline
+
+
+Exercise 2
+# -- comment character, anything printed after the octothrope is ignored by ruby
+
+
+Exercise 3
++ -- plus, adds numbers or contatenates strings
+- -- minus, subtracts numbers
+* -- asterisk, multiplies numbers
+/ -- slash, divides numbers
+% -- percent, whole number division (modulo)
+< -- less than
+> -- greater than
+<= -- less than or equal to
+>= -- greater than or equal to
+integer -- whole number
+floating point number -- decimal
+
+
+Exercise 4
+= -- equals, used for variable assignment
+variable -- placeholder for data: numbers, strings, arrays, etc.
+#{variable} -- string interpolation, will show the expression of the variable in a string
+	e.g. `a = 3`, `"You get #{a} wishes"` would then be "You get 3 wishes"
+
+
+Exercise 5
+format string -- similar to variable substitution
+	e.g. my_name = "Eric Fisher"
+	`puts "My name is %s" % my_name` would print "My name is Eric Fisher"
+%s -- string formatter
+%d -- integer formatter
+[] -- array wrapper
+
+
+Exercise 6
+false, true -- BOOLEAN values
+
+
+Exercise 7
+print -- prints a string to stdout, no newline (like puts does a newline)
+
+
+Exercise 9
+HEREDOC -- <<HEREDOC syntax to wrap multi-line strings
+
+
+Exercise 10
+\ -- escape character
+\n -- newline
+\t -- tab
+\\ -- escaped backslash
+
+
+Exercise 11
+gets -- get string from stdin
+chomp -- removes trailing newline from pressing return, e.g. gets.chomp()
+
+
+Exercise 12
+require -- used to add modules to Ruby code, only loads once.  modules also called libraries.
+open-uri -- module to open http, https, or ftp URL as though it were a file
+	e.g. open("http://www.ruby-lang.org/")
+p -- p "foo" is comparable to puts "foo".inspect, more useful for debugging
+
+
+Exercise 13
+ARGV -- array of arguments passed to the ruby script run at the command line, 0-indexed
+$0 -- variable that holds name of the script that ruby is executing
+
+
+Exercise 14
+.first -- method to access first element in array
+STDIN -- standard input from the *nix command line
+
+
+Exercise 15
+File.open() -- method to open a file object, paired with variable assignment
+	e.g. File.open(some_file_name, 'w')  -- the second argument is for privileges
+.read() -- read the contents of a file object
+
+
+Exercise 16
+.close() -- closes the file object created by .open()
+.readline() -- reads one line of a text file
+.truncate() -- deletes the contents of the file
+.write() -- writes the argument passed to the file
+
+
+Exercise 17
+.length -- returns the byte size of the file
+File.exists? some_file -- takes "some_file" as an argument and returns BOOL on whether file exists
+
+
+Exercise 18
+Example function definition:
+
+def function(*args)
+	arg1, arg2 = args
+end
+
+def -- starts the function definition, short for define
+(*args) -- where the parameters of the function go
+end -- ends the function definition
+
+
+Exercise 20
+ARGV[0] -- accessing exact index of ARGV array
+File.seek -- moves to exact position within file object, three starting points
+	IO::SEEK_CUR -- e.g. f.seek(3, IO::SEEK_CUR) if current position was 5, this seeks to 8
+	IO::SEEK_END -- e.g. f.seek(-3, IO::SEEK_END) starts from the end
+	IO::SEEK_SET -- e.g. f.seek(3, IO::SEEK_SET) seeks the absolute location of amount
++= -- shorthand notation for variable = variable + something
