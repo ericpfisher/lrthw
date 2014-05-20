@@ -14,7 +14,7 @@ Exercise 2
 
 
 Exercise 3
-+ -- plus, adds numbers or contatenates strings
++ -- plus, adds numbers or concatenates strings
 - -- minus, subtracts numbers
 * -- asterisk, multiplies numbers
 / -- slash, divides numbers
@@ -35,7 +35,7 @@ variable -- placeholder for data: numbers, strings, arrays, etc.
 
 
 Exercise 5
-format string -- similar to variable substitution
+format string -- similar to string interpolation
 	e.g. my_name = "Eric Fisher"
 	`puts "My name is %s" % my_name` would print "My name is Eric Fisher"
 %s -- string formatter
